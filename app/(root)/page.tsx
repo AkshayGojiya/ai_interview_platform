@@ -14,8 +14,8 @@ const page = async () => {
     await getLatestInterviews({userId: user?.id!})
   ])
 
-  const hasPastInterviews = userInterviews?.length > 0;
-  const hasUpcomingInterviews = latestInterviews?.length > 0;
+  const hasPastInterviews = userInterviews?.length! > 0;
+  const hasUpcomingInterviews = latestInterviews?.length! > 0;
   return (
     <>
       <section className='card-cta'>
@@ -27,7 +27,7 @@ const page = async () => {
             <Link href='/interview'>Start an Interview</Link>
           </Button>
         </div>
-        <Image src="/robot.png" width={400} height={400} className='max-sm:hidden' alt='Robot'/>
+        <Image src="/robot-alt.png" width={400} height={400} className='max-sm:hidden' alt='Robot'/>
       </section>
 
       <section className='flex flex-col gap-6 mt-8'>
