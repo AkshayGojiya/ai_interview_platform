@@ -133,7 +133,7 @@ const Agent = ({ userName, userId, type, interviewId, questions }: AgentProps) =
     <div className='call-view'>
       <div className='card-interviewer'>
         <div className='avatar'>
-            <Image src="/ai-avatar.png" alt='vapi' width={65} height={54} className='object-cover'/>
+            <Image src="/logo-new.png" alt='vapi' width={75} height={54} className='object-cover'/>
             {speakingRole === 'assistant' && <span className='animate-speak'></span>}
         </div>
         <h3>AI Interviewer</h3>
@@ -142,7 +142,7 @@ const Agent = ({ userName, userId, type, interviewId, questions }: AgentProps) =
       <div className='card-border'>
         <div className='card-content'>
             <div className='avatar'>
-                <Image src="/user-avatar-new.jpg" alt='user avatar' width={540} height={540} className='rounded-full object-cover size-[120px]'/>
+                <Image src="/user-avatar.jpg" alt='user avatar' width={540} height={540} className='rounded-full object-cover size-[120px]'/>
                 {speakingRole === 'user' && <span className='animate-speak'></span>}
             </div>
             <h3>{userName}</h3>
