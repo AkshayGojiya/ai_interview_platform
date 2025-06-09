@@ -1,3 +1,4 @@
+import { Button } from '@/components/ui/button'
 import { isAuthenticated } from '@/lib/actions/auth.action'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -17,6 +18,9 @@ const RootLayout = async ({children}:{children: ReactNode}) => {
           <Image src="/logo-new.png" alt='Logo' width={50} height={32} />
           <h2 className='text-primary-100'>IntervueX</h2>
         </Link>
+        {/* <Button asChild className='btn-primary max-sm:w-full'>
+            <Link href='/interview'>Logout</Link>
+        </Button> */}
       </nav>
       {children}
     </div>
