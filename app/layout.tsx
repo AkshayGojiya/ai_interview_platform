@@ -9,7 +9,7 @@ const monaSans = Mona_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "IntervueX Pro",
+  title: "IntervueX Pro | AI-Powered Mock Interviews to Ace Every Round",
   description:
     "AI-powered mock interview platform to sharpen your skills and ace every round with confidence.",
   keywords: ["AI mock interview", "interview preparation", "IntervueX", "mock interview", "job prep", "AI interview assistant"],
