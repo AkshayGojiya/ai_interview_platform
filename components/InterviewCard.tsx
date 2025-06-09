@@ -6,7 +6,7 @@ import { Button } from './ui/button';
 import Link from 'next/link';
 import DisplayTechIcons from './DisplayTechIcons';
 
-const InterviewCard = ( {interviewId, userId, role, type, techstack, createdAt}: InterviewCardProps ) => {
+const InterviewCard = ( {id, userId, role, type, techstack, createdAt}: InterviewCardProps ) => {
     const feedback = null as Feedback | null;
     const cleanedType = type.split(' ')[0].charAt(0).toUpperCase() + type.split(' ')[0].slice(1).toLowerCase();
     const normalizedType = /mix/gi.test(cleanedType) ? 'Mixed' : cleanedType;
@@ -40,7 +40,7 @@ const InterviewCard = ( {interviewId, userId, role, type, techstack, createdAt}:
             <div className='flex flex-row justify-between'>
                 <DisplayTechIcons techStack={techstack}/>
                 <Button className='btn-primary'>
-                    <Link href={feedback ? `/interview/${interviewId}/feedback` : `/interview/${interviewId}`}>{feedback ? "Check Feedback" : "View Interview"}</Link>
+                    <Link href={feedback ? `/interview/${id}/feedback` : `/interview/${id}`}>{feedback ? "Check Feedback" : "View Interview"}</Link>
                 </Button>
             </div>
         </div>
