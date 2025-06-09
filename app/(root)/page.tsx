@@ -27,7 +27,7 @@ const page = async () => {
             <Link href='/interview'>Start an Interview</Link>
           </Button>
         </div>
-        <Image src="/robot-alt.png" width={400} height={400} className='max-sm:hidden' alt='Robot'/>
+        <Image src="/robot-alt.png" width={300} height={300} className='max-sm:hidden' alt='Robot'/>
       </section>
 
       <section className='flex flex-col gap-6 mt-8'>
