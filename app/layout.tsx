@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     siteName: "IntervueX Pro",
     images: [
       {
-        url: "/logo-new.png", 
-        width: 306,
-        height: 241,
+        url: "/logo-resized.png", 
+        width: 409,
+        height: 260,
         alt: "IntervueX Pro Logo",
       },
     ],
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title: "IntervueX Pro",
     description:
       "Sharpen your skills and ace every round with IntervueX Pro – the AI-powered mock interview platform.",
-    images: ["/logo-new.png"], 
+    images: ["/logo-resized.png"], 
     creator: "@GojiyaAkshay", 
   },
 };
