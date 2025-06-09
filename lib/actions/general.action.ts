@@ -15,22 +15,22 @@ export async function getInterviewByUserId(userId:string): Promise<Interview[] |
     })) as Interview[];
 }
 
-export async function getLatestInterviews(params:GetLatestInterviewsParams): Promise<Interview[] | null> {
+export async function getLatestInterviews(params: GetLatestInterviewsParams): Promise<Interview[] | null> {
     const { userId, limit = 20 } = params;
-    // const interviews = await db.collection('interviews').where('userId', '!=', userId).where('finalized', '==', 'true').orderBy('createdAt', 'desc').limit(limit).get();
+  
     const interviews = await db
-    .collection('interviews')
-    .orderBy('createdAt', 'desc')
-    .where('userId', '!=', userId)
-    .where('finalized', '==', 'true')
-    .limit(limit)
-    .get();
-
+      .collection("interviews")
+      .orderBy("createdAt", "desc")
+      .where("finalized", "==", true)
+      .where("userId", "!=", userId)
+      .limit(limit)
+      .get();
+  
     return interviews.docs.map((doc) => ({
-        id: doc.id,
-        ...doc.data()
+      id: doc.id,
+      ...doc.data(),
     })) as Interview[];
-}
+  }
 
 export async function getInterviewById(id:string): Promise<Interview | null> {
     const interview = await db.collection('interviews').doc(id).get();
