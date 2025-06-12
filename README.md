@@ -1,6 +1,6 @@
 # 🚀 IntervueX Pro
 
-[![License](https://github.com/AkshayGojiya/ai_interview_platform.git)](LICENSE)
+[![License](https://github.com/AkshayGojiya/ai_interview_platform)](LICENSE)
 [![Deploy on Vercel](https://vercel.badge.vercel.app/api/akshaygojiya/intervuexpro)](https://intervuexpro.vercel.app)
 [![Made With Next.js](https://img.shields.io/badge/Made%20with-Next.js-000?logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![Firebase](https://img.shields.io/badge/Backend-Firebase-ffca28?logo=firebase&logoColor=000)](https://firebase.google.com/)
