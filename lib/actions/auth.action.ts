@@ -90,11 +90,11 @@ export async function logout() {
     cookieStore.set('session', '', {
       maxAge: 0,
       httpOnly: true,
-      path: '/sign-in',
+      path: '/',
       secure: process.env.NODE_ENV === 'production',
       sameSite: 'lax',
     });
-  }
+}
 
 export async function getCurrentUser():Promise<User | null> {
     const cookieStore = await cookies();
