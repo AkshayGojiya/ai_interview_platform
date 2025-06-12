@@ -12,7 +12,7 @@
 
 **IntervueX Pro** is an advanced, full-stack mock interview platform where users can practice interviews tailored to their role, tech stack, and experience level. It features a voice-based **AI interviewer**, powered by **Vapi Workflows**, and a slick UI built with **Next.js** and **Tailwind CSS**.
 
-### 🔗 [Live Site →](https://intervuexpro.vercel.app)
+### 🔗 Live Now : [https://intervuexpro.vercel.app](https://intervuexpro.vercel.app)
 
 ---
 
@@ -52,7 +52,7 @@ https://github.com/AkshayGojiya/ai_interview_platform.git/public/demo.png
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/akshaygojiya/intervuex-pro.git
+git clone https://github.com/AkshayGojiya/ai_interview_platform.git
 cd intervuex-pro
 ```
 ### 2. Install dependencies
