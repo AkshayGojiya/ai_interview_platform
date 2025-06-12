@@ -15,9 +15,7 @@ const page = async () => {
         </Link>
         <h3>Interview Generation</h3>
       </div>
-      <div className='flex justify-center'>
-        <InterviewForm/>
-      </div>
+        <Agent userName={user?.name!} userId={user?.id} type="generate"/>
     </>
   )
 }

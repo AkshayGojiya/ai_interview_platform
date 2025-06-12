@@ -22,10 +22,15 @@ const page = async () => {
         <div className='flex flex-col gap-6 max-w-lg'>
           <h2>Get Interview-Ready with AI-Powered Practice & Feedback</h2>
           <p className='text-lg'>Practice on real interview questions & get instant feedback</p>
-
-          <Button asChild className='btn-primary max-sm:w-full'>
-            <Link href='/interview'>Start an Interview</Link>
-          </Button>
+          <div className="flex gap-4 flex-wrap max-sm:flex-col">
+            <Button asChild className='btn-primary max-sm:w-full'>
+              <Link href='/interview'>Generate an Interview</Link>
+            </Button>
+            <Button asChild className='btn-secondary max-sm:w-full'>
+              <Link href='/interview/start'>Start an Interview</Link>
+            </Button>
+          </div>
+          
         </div>
         <Image src="/robot-alt.png" width={300} height={300} className='max-sm:hidden' alt='Robot'/>
       </section>

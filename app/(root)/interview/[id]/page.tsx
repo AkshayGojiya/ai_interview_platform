@@ -1,5 +1,6 @@
 import Agent from '@/components/Agent';
 import DisplayTechIcons from '@/components/DisplayTechIcons';
+import { db } from '@/firebase/admin';
 import { getCurrentUser } from '@/lib/actions/auth.action';
 import { getInterviewById } from '@/lib/actions/general.action';
 import { getRandomInterviewCover } from '@/lib/utils';
@@ -14,6 +15,22 @@ const page = async ({params}: RouteParams) => {
 
   if(!interview)
     redirect('/');
+  if(interview.userId !== user?.id) {
+    const intv = {
+      role: interview.role, type: interview.type, level: interview.level, techstack: interview.techstack, questions: interview.questions, userId: user?.id, finalized: true, coverImage: getRandomInterviewCover(), 
+      createdAt: new Date().toISOString()
+    }
+    
+      const isAvailable = await db.collection('interviews').where('userId', '==', user?.id).where('role', '==', interview.role).where('type', '==', interview.type).where('questions', '==', interview.questions).where('level', '==', interview.level).where('techstack', '==', interview.techstack).limit(1).get();
+      if(isAvailable.empty) {
+        const newInt = await db.collection('interviews').add(intv);
+        redirect(`/interview/${newInt.id}`);
+      } else {
+        redirect(`/interview/${isAvailable.docs[0].id}`);
+      }
+    
+  }
+
 
   return (
     <>

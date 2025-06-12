@@ -18,7 +18,7 @@ const page = async ({params}: RouteParams) => {
 
   const feedback = await getFeedbackByInterviewId({
     interviewId: id,
-    userId: user?.id!
+    userId: interview.userId
   })
   return (
     <section className="section-feedback">
