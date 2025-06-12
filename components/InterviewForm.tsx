@@ -44,7 +44,7 @@ const InterviewForm = () => {
             amount: values.numberOfQuestions,
             userid: user?.id,
         };
-        const res = await fetch("/api/vapi/generate", {
+        const res = await fetch("https://intervuexpro.vercel.app/api/vapi/generate", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
