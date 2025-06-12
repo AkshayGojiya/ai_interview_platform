@@ -57,8 +57,14 @@ https://github.com/AkshayGojiya/ai_interview_platform.git/public/demo.png
 git clone https://github.com/akshaygojiya/intervuex-pro.git
 cd intervuex-pro
 
+### 2. Install dependencies
+
+```bash
 npm install
 
+### 3. Set up .env.local
+
+```bash
 NEXT_PUBLIC_FIREBASE_API_KEY=your_key
 NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
 NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
@@ -69,4 +75,7 @@ NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
 NEXT_PUBLIC_VAPI_API_KEY=your_vapi_api_key
 NEXT_PUBLIC_VAPI_WORKFLOW_ID=your_vapi_workflow_id
 
+### 4. Start local dev server
+
+```bash
 npm run dev
