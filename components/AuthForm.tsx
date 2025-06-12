@@ -99,7 +99,7 @@ const AuthForm = ({ type}: {type: FormType}) => {
         <FormField control={form.control} name="email" label="Email" placeholder="Your Email" type="email"/>
         <FormField control={form.control} name="password" label="Password" placeholder="Enter your password" type="password"/>
 
-        <Button type="submit" className="btn">{isSignIn ? 'Sign In' : 'Create an Account'}</Button>
+        <Button type="submit" className="btn mt-4">{isSignIn ? 'Sign In' : 'Create an Account'}</Button>
       </form>
       </Form>
       <p className="text-center">
