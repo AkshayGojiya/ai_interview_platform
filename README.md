@@ -18,7 +18,9 @@
 
 ## 🎥 Demo
 
-https://github.com/AkshayGojiya/ai_interview_platform.git/public/demo.png
+<p align="center">
+  <img src="./public/demo.png" width="600" alt="IntervueX Pro Demo" />
+</p>
 
 ---
 
