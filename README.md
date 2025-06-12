@@ -1,6 +1,5 @@
 # 🚀 IntervueX Pro
 
-[![License](https://github.com/AkshayGojiya/ai_interview_platform)](LICENSE)
 [![Made With Next.js](https://img.shields.io/badge/Made%20with-Next.js-000?logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![Firebase](https://img.shields.io/badge/Backend-Firebase-ffca28?logo=firebase&logoColor=000)](https://firebase.google.com/)
 [![Vapi Agent](https://img.shields.io/badge/AI%20Agent-Vapi-blueviolet)](https://vapi.ai)
